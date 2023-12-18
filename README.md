@@ -6,5 +6,7 @@ We introduced a graph-based pangenome called GGCPan as a reference for gastric c
 bash construct.sh
 ```
 ## Alignment
-Reads aligned to linear references using `BWA` and GATK pipeline.   
-Reads aligened to graph-modeled pangenome using VG Giraffe.
+Reads aligned to linear references using `BWA MEM` and `GATK` pipeline.   
+Reads aligened to graph-modeled pangenome using `vg giraffe`.
+## Variant Calling
+We used Manta, Delly,Svaba,Survivor,vg call and Mutect2 to detect SNPs,Indels and SVs.
