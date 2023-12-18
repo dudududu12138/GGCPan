@@ -6,5 +6,5 @@ We introduced a graph-based pangenome called GGCPan as a reference for gastric c
 bash construct.sh
 ```
 ## Alignment
-Reads aligned to linear references using BWA and GATK pipeline.
+Reads aligned to linear references using BWA and GATK pipeline.   
 Reads aligened to graph-modeled pangenome using VG Giraffe.
