@@ -2,12 +2,9 @@
 ## Introduction
 We introduced a graph-based pangenome called GGCPan as a reference for gastric cancer, and systematically compared the results with those traditional genomics studies using the human reference genome or a linear pangenome as the references. This is our construction method and the analysis pipeline.
 ## GGCPan Construction
-##### step1
-Align assembled contigs(>500bp) to GRCh38 using minimap2.
-##### step2
-Detected variants using paftools.js and filter the small variants and variants with quality <= 60.
-##### step3
-Embeded variants to GRCh38 using vg toolkit.
+* step1：Align assembled contigs(>500bp) to GRCh38 using minimap2.
+* step2：Detected variants using paftools.js and filter the small variants and variants with quality <= 60.
+* step3：Embeded variants to GRCh38 using vg toolkit.
 ##### step1,2,3 are included in the following construct.sh file, which can be run to generate the graph-modeled pangenome.
 ```
 bash construct.sh
