@@ -11,7 +11,7 @@ k8 ${paftools} call \
  ${sample}.srt.paf \
  >${sample}.vcf
 
-## filter variant result
+## retain structural variants with quality>=60 
 python minimap2.filter.py $sample
 
 ## compress
