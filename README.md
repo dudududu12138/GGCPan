@@ -11,13 +11,14 @@ bash construct.sh
 ```
 ## Alignment
 #### Reads aligned to linear references using `BWA MEM` and `GATK` pipeline.   
-We firstly align the raw reads to references with BWA MEM,then mark duplications and adjust the base quality with GATK BQSR. The codes are stored in `Alignment/gatk.slurm`
+* We firstly align the raw reads to references with BWA MEM,then mark duplications and adjust the base quality with GATK BQSR.
+* The codes are stored in `Alignment/gatk.slurm`
 #### Reads aligened to graph-modeled pangenome using `vg giraffe`.
-The raw reads are aligned to graph-modeled reference with `vg giraffe`. The codes are stored in `Alignment/graph.alignment.sh`.  
-To detect snps and indels from graph-modeled pangenome,we convert the format of graph alignment result(.gam) to linear alignment format(.bam).
+* The raw reads are aligned to graph-modeled reference with `vg giraffe`. The codes are stored in `Alignment/graph.alignment.sh`.  
+* To detect snps and indels from graph-modeled pangenome,we convert the format of graph alignment result(.gam) to linear alignment format(.bam).
 ## Variant Calling
 #### SNPs and Indels
-We used `GATK Mutect2` to detect SNPs and Indels. The coded are stored in `VariantCalling/mutect2.sh`.
+* We used `GATK Mutect2` to detect SNPs and Indels. The coded are stored in `VariantCalling/mutect2.sh`.
 #### Structural vatiants
-We used `Manta`, `Delly`,`Svaba`,`Survivor` to detect SVs based on linear references. We used `vg call` to detect SVs based on graph-modeled references.  
-The codes are stored in `VariantCalling/linear.variantDetection.sh` and `VariantCalling/graph.variantDetection.sh`
+* We used `Manta`, `Delly`,`Svaba`,`Survivor` to detect SVs based on linear references. We used `vg call` to detect SVs based on graph-modeled references.  
+* The codes are stored in `VariantCalling/linear.variantDetection.sh` and `VariantCalling/graph.variantDetection.sh`
