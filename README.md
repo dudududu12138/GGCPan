@@ -22,5 +22,5 @@ bash construct.sh
 * We used `GATK Mutect2` to detect SNPs and Indels.
 * The coded are stored in `VariantCalling/mutect2.sh`.
 #### Structural vatiants
-* We used `Manta`, `Delly`,`Svaba`,`Survivor` to detect SVs based on linear references. We used `vg call` to detect SVs based on graph-modeled references.  
-* The codes are stored in `VariantCalling/linear.variantDetection.sh` and `VariantCalling/graph.variantDetection.sh`
+* We used `Manta`, `Delly`,`Svaba` and `Survivor` to detect SVs based on linear references. We used `vg call` to detect SVs based on graph-modeled references.  
+* The codes are stored in `VariantCalling/linear.variantDetection.sh` and `VariantCalling/graph.variantDetection.sh`.
