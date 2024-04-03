@@ -12,10 +12,10 @@ bash construct.sh
 ## Alignment
 #### Reads aligned to linear references using `BWA MEM` and `GATK` pipeline.   
 * We firstly align the raw reads to references with BWA MEM,then mark duplications and adjust the base quality with GATK BQSR.
-* The codes are stored in `Alignment/gatk.slurm`
+* The codes are stored in `Alignment/gatk.slurm`.
 #### Reads aligened to graph-modeled pangenome using `vg giraffe`.
 * The raw reads are aligned to graph-modeled reference with `vg giraffe`. The codes are stored in `Alignment/graph.alignment.sh`.  
-* To detect snps and indels from graph-modeled pangenome,we convert the format of graph alignment result(.gam) to linear alignment format(.bam).
+* To detect snps and indels from graph-modeled pangenome,we convert graph alignment format(.gam) to linear alignment format(.bam).
 ## Variant Calling
 #### SNPs and Indels
 * We used `GATK Mutect2` to detect SNPs and Indels. The coded are stored in `VariantCalling/mutect2.sh`.
